@@ -1,0 +1,727 @@
+/**
+ * Scroll bars
+ */
+ /* width */
+#oxygen-ui ::-webkit-scrollbar {
+	width:8px;
+}
+
+/* Track */
+#oxygen-ui ::-webkit-scrollbar-track {
+	background-color:rgba(255,255,255,0.3);
+}
+
+/* Handle */
+#oxygen-ui ::-webkit-scrollbar-thumb {
+	background-color:rgba(255,255,255,0.5);
+}
+
+/* Handle on hover */
+#oxygen-ui ::-webkit-scrollbar-thumb:hover {
+	background:white;
+}
+
+
+/**
+ * Iframe container
+ */
+#ct-viewport-container {
+	background-color:#333;
+}
+
+#ct-viewport-container.viewport-fullscreen {
+	margin-left:0!important;
+	width:100%!important;
+	padding-top:0px!important;
+	position:absolute!important;
+	top:0!important;
+	left:0!important;
+	right:0!important;
+	bottom:0!important;
+}
+
+#ct-viewport-container.viewport-fullscreen #ct-artificial-viewport {
+	transform:scale(1)!important;
+	width:100vw!important;
+	margin:0!important;
+	height:100vh!important;
+	position:absolute;
+	z-index:2!important;
+}
+
+#oxygen-ui > .oxygen-add-section-library-flyout-panel {
+	/* Could use in future versions. */
+}
+
+.oxygen-tinymce-dialog-wrap {
+	/* Could use in future versions. */	
+}
+
+
+/**
+ * Top bar
+ */
+#oxygen-topbar {
+	background-color:#000;
+}
+
+#oxygen-topbar .oxygen-dom-tree-button,
+#oxygen-topbar .oxygen-manage-menu,
+#oxygen-topbar .oxygen-back-to-wp-menu {
+	background-color:#111;
+}
+
+#oxygen-topbar .oxygen-add-button,
+#oxygen-topbar .oxygen-save-button,
+#oxygen-topbar .oxygen-zoom-control .oxygen-zoom-icon,
+#oxygen-topbar .oxygen-zoom-control .oxygen-zoom-control-zoom-amount,
+#oxygen-topbar .oxygen-select-box,
+#oxygen-topbar .oxygen-select-box-options,
+#oxygen-topbar .oxygen-toolbar-button-dropdown {
+	background:transparent;
+	background-color:#222;
+}
+
+#oxygen-topbar .oxygen-select-box-options {
+	width:300px;
+}
+
+#oxygen-topbar .oxygen-select-box-option input {
+	background-color:#000;
+}
+
+#oxygen-topbar .oxygen-button-list .oxygen-button-list-button {
+	background-color:#333;
+}
+
+#oxygen-topbar .oxygen-add-button,
+#oxygen-topbar .oxygen-save-button {
+	background:transparent;
+	background-color:#24577E;
+}
+
+#oxygen-topbar .oxygen-select-box-option:hover,
+#oxygen-topbar .oxygen-manage-menu:hover,
+#oxygen-topbar .oxygen-back-to-wp-menu:hover,
+#oxygen-topbar .oxygen-dom-tree-button:hover,
+#oxygen-topbar .oxygen-toolbar-button-dropdown-option:hover {
+	background:transparent;
+	background-color:#444;
+}
+
+#oxygen-topbar .oxygen-formatting-toolbar .oxygen-formatting-done,
+#oxygen-topbar .oxygen-formatting-toolbar .oxygen-insert-data {
+	background:transparent;
+	background-color:#444;
+}
+
+#oxygen-topbar .oxygen-formatting-toolbar .oxygen-button-list-button:hover {
+	background:transparent;
+	background-color:#555;
+}
+
+
+/**
+ * Panels
+ */
+#oxygen-sidebar,
+#oxygen-add-sidebar,
+#oxygen-ui > .oxygen-add-section-library-flyout-panel {
+	background-color:#000;
+}
+
+#oxygen-add-sidebar .oxygen-add-searchbar-wrapper,
+#oxygen-toolbar-original-panels.oxygen-add-panels {
+	background-color:#111;
+}
+
+#oxygen-add-sidebar .oxygen-add-section-accordion,
+#oxygen-add-sidebar .oxygen-sidebar-breadcrumb,
+#oxygen-sidebar-control-panel-basic-styles,
+.oxygen-sidebar-control-panel.oxygen-sidebar-advanced-home,
+.cm-s-default .CodeMirror-gutters,
+.oxygen-control-row-bottom-bar,
+.oxygen-sidebar-breadcrumb,
+.oxygen-sidebar-control-panel {
+	background-color:#222;
+}
+
+#oxygen-add-sidebar .oxygen-add-section-element,
+#oxygen-add-sidebar .oxygen-add-section-subsection,
+#oxygen-add-sidebar a.oxygen-add-section-library-menu-subcategories-active,
+#oxygen-add-sidebar .oxygen-add-section-library-menu-subcategories a,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-control-rows-multiple-inset,
+.oxygen-sidebar-advanced-subtab,
+.oxygen-global-settings .oxygen-sidebar-advanced-subtab {
+	background-color:#333;
+}
+
+.cm-s-default.CodeMirror {
+	background-color:#333!important;
+}
+
+#oxygen-add-sidebar .oxygen-add-section-accordion:hover,
+.oxygen-effects-tab .oxygen-sidebar-advanced-subtab,
+.oxygen-gradient-subtab.oxygen-sidebar-advanced-subtab {
+	background-color:#444;
+}
+
+#oxygen-add-sidebar .oxygen-add-section-element:hover,
+#oxygen-add-sidebar .oxygen-add-section-subsection:hover,
+#oxygen-add-sidebar .oxygen-add-section-library-menu-subcategories a:hover,
+#oxygen-sidebar .oxygen-sidebar-top .oxygen-sidebar-tabs .oxygen-sidebar-tabs-tab.oxygen-sidebar-tabs-tab-active,
+.oxygen-sidebar-advanced-subtab:hover,
+.oxygen-effects-tab .oxygen-sidebar-advanced-subtab:hover,
+.oxygen-gradient-subtab.oxygen-sidebar-advanced-subtab:hover,
+.oxygen-global-settings .oxygen-sidebar-advanced-subtab:hover {
+	background-color:#24577E;
+}
+
+#oxygen-sidebar .oxygen-sidebar-top .oxygen-sidebar-tabs .oxygen-sidebar-tabs-tab {
+	background-color:#333;
+}
+
+
+/**
+ * Panel layouts
+ */
+#oxygen-sidebar .oxygen-sidebar-top .oxygen-sidebar-tabs {
+	height:auto;
+	justify-content:center;
+	padding:10px 0;
+	border-bottom:1px dashed rgba(255,255,255,0.2);
+	background-color:#222;
+}
+
+#oxygen-sidebar .oxygen-sidebar-top .oxygen-sidebar-tabs .oxygen-sidebar-tabs-tab {
+	width:auto;
+	padding:5px 8px;
+	margin-right:5px;
+	border-radius:4px;
+	font-size:12px;
+}
+
+.oxygen-sidebar-tabs-tab.oxy-styles-present::after,
+.oxygen-sidebar-advanced-subtab.oxy-styles-present span::after {
+	box-shadow:none;
+	height:5px;
+	border-radius:3px;
+	background-color:#00ff00;
+	margin-right:0;
+}
+
+.oxygen-active-selector-box-id,
+.oxygen-active-selector-box-class {
+	border-radius:12px;
+	padding:10px 20px;
+	font-size:10px;
+	text-transform:uppercase;
+}
+
+.oxy-styles-present {
+	text-shadow:none;
+}
+
+
+/**
+ * Buttons and inputs
+ */
+.oxygen-sidebar-control-panel:not(.oxygen-sidebar-control-panel-basic-styles) .oxygen-color-picker,
+.oxygen-button-list .oxygen-button-list-button,
+.oxygen-input,
+.oxygen-measure-box,
+.oxygen-select-box-options,
+.oxygen-file-input,
+.oxygen-input-with-button,
+.oxygen-select-box,
+.oxygen-sidebar-control-panel:not(.oxygen-sidebar-control-panel-basic-styles) .oxygen-icon-button-list-option-icon-wrapper {
+	background-color:#222;
+}
+
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-icon-button-list-option-icon-wrapper,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-measure-box,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-color-picker,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-select-box,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-select-box-options
+#oxygen-global-settings .oxygen-select-box,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-file-input,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-button-list-button,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-input,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .textarea,
+.oxygen-sidebar-control-panel-basic-styles .oxygen-sidebar-advanced-subtab {
+	background-color:#333;
+}
+
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-control-rows-multiple-inset .oxygen-icon-button-list-option-icon-wrapper,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-select-box-options {
+	background-color:#444;
+}
+
+#oxygen-sidebar .oxygen-select-box-option:hover,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-icon-button-list-option-active:not(.oxygen-icon-button-list-button-default) .oxygen-icon-button-list-option-icon-wrapper,
+.oxygen-sidebar-control-panel-basic-styles:not(.oxygen-basic-styles-subtub) .oxygen-control-rows-multiple-inset .oxygen-icon-button-list-option-active:not(.oxygen-icon-button-list-button-default) .oxygen-icon-button-list-option-icon-wrapper,
+.oxygen-icon-button-list-option-active:not(.oxygen-icon-button-list-button-default) .oxygen-icon-button-list-option-icon-wrapper,
+.oxygen-button-list .oxygen-button-list-button.oxygen-button-list-button-active:not(.oxygen-button-list-button-default),
+.oxygen-sidebar-control-panel-basic-styles .oxygen-sidebar-advanced-subtab:hover {
+	background-color:#24577E;
+}
+
+
+/**
+ * Left panel Queries
+ */
+.oxygen-media-query-and-selector-wrapper {
+	flex-direction:column;
+}
+
+.oxygen-media-query-and-selector-wrapper .oxygen-media-query-box {
+	display:none;
+}
+
+.oxygen-add-panels {
+	background-color:#111;
+}
+
+.oxygen-media-query-box-wrapper {
+	margin:8px 0;
+}
+
+.oxygen-media-query-dropdown {
+	display:flex;
+	position:relative;
+	top:0;
+	background-color:#222;
+	width:100%;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown:after {
+	content: "\25bc";
+	color:#777;
+	margin-top:7px;
+	margin-left:30px;
+	cursor:pointer;
+}
+
+.oxygen-media-query-dropdown li {
+	width:auto;
+}
+
+.oxygen-media-query-dropdown li:hover {
+	background-color:#24577E;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span {
+	font-size:0;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span:before,
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span:after {
+	display:block;
+	box-shadow:none;
+	height:5px;
+	border-radius:3px;
+	background-color:#222;
+	margin-right:0;
+	content:"";
+	width:5px;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li:hover span:before,
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li:hover span:after {
+	background-color:#24577E;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span:after {
+	margin-top:5px;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span.oxygen-current-media-query:before {
+	background-color:#00b8ff;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span.oxy-styles-present:after {
+	background-color:#00ff00;
+}
+
+.oxygen-media-query-box-wrapper:not(.oxygen-active-select) .oxygen-media-query-dropdown li span + img {
+	display:none;
+}
+
+.oxygen-media-query-dropdown li span + img,
+.oxygen-classes-dropdown li img,
+.oxygen-states-dropdown li img {
+	width:20px;
+	border:2px solid red;
+	border-radius:10px;
+}
+
+/* Active selector */
+.oxygen-active-selector-box-wrapper .oxygen-active-selector-box {
+	background-color: #222;
+}
+
+.oxygen-active-selector-box-state {
+	background-color:transparent;
+}
+
+.oxygen-active-selector-box-state:hover {
+	background-color:#555;
+}
+
+.oxygen-states-dropdown,
+.oxygen-classes-dropdown {
+	background-color:#444;
+	width:100%;
+}
+
+.oxygen-states-dropdown li:hover,
+.oxygen-classes-dropdown li:hover,
+.oxygen-classes-dropdown-add-class {
+	background-color:#24577E;
+}
+
+.oxygen-states-dropdown-add-state,
+.oxygen-states-dropdown li:last-child {
+	background-color:#555;
+}
+
+.oxygen-classes-dropdown li:hover .oxygen-classes-dropdown-add-class {
+	background-color:#333;
+}
+
+.oxygen-active-selector-box-class {
+	background-color:#25ac29;
+}
+
+
+/**
+ * Right panels
+ */
+.oxygen-sidepanel-header-row {
+	background-color:#222;
+}
+
+.oxygen-flex-panel .oxygen-settings-breadcrumb,
+#oxygen-global-settings .oxygen-settings-breadcrumb {
+	background-color:#222;
+}
+
+.oxygen-settings-content .oxygen-measure-box,
+#oxygen-global-settings .oxygen-input,
+#oxygen-global-settings .oxygen-color-picker,
+#oxygen-global-settings .oxygen-select-box,
+#oxygen-global-settings .oxygen-select-box-options,
+#oxygen-global-settings .oxygen-button-list .oxygen-button-list-button {
+	background-color:#333;
+}
+
+#oxygen-global-settings .oxygen-add-global-color,
+#oxygen-global-settings .oxygen-add-global-color-set,
+#oxygen-global-settings .oxygen-add-global-font {
+	background-color:#555;
+}
+
+.ct-css-node-header {
+	background-color:#444;
+	border:none;
+}
+
+.ct-css-node-header:hover,
+.ct-css-node-hilite,
+.ct-css-node-header:hover {
+	border:none;
+	background-color:#24577E;
+	color:white;
+}
+
+#oxygen-global-settings .oxygen-button-list .oxygen-button-list-button.oxygen-button-list-button-active:not(.oxygen-button-list-button-default) {
+	background-color:#24577E;
+}
+
+.ct-elements-managers-body .ct-tab-panel,
+#oxygen-global-settings {
+	background-color:#222;
+}
+
+.ct-dom-tree-left-dash-cover,
+.ct-dom-tree-horizontal-dash,
+.ct-dom-tree-bottom-dash-cover,
+.ct-elements-managers-bottom > .ct-dom-tree-node.ct-dom-tree-no-children,
+.ct-dom-tree-node-anchor,
+.ct-elements-managers-bottom > .ct-dom-tree-node.ct-dom-tree-node-expanded:not(.ct-dom-tree-no-children),
+.ct-expand-butt {
+	background:none;
+}
+
+.ct-elements-managers-bottom > .ct-dom-tree-node .ct-dom-tree-node {
+	margin:0;
+	padding:0 0 0 25px;
+}
+
+.ct-elements-managers-bottom .ct-expand-butt span.ct-icon,
+.ct-dom-tree-node-anchor {
+	padding:0;
+}
+
+
+/**
+ * CT Colors
+ */
+.ct-dom-tree-node > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before {
+	display:block;
+	box-shadow:none;
+	height:5px;
+	border-radius:3px;
+	content:"";
+	width:5px;
+	float:left;
+	margin-top:4px;
+	margin-right:8px;
+}
+
+.ct-dom-tree-node[data-component-name="ct_section"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_new_columns"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_div_block"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before {
+	background-color:#FF0000;
+	
+}
+
+.ct-dom-tree-node[data-component-name="ct_headline"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_text_block"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="oxy_rich_text"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before {
+	background-color:#CE00FF;
+}
+
+.ct-dom-tree-node[data-component-name="ct_link_text"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_link"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_link_button"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before {
+	background-color:#006EFF;
+}
+
+.ct-dom-tree-node[data-component-name="ct_image"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_video"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_fancy_icon"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before {
+	background-color:#F8FF0A;
+}
+
+.ct-dom-tree-node[data-component-name="ct_code_block"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before,
+.ct-dom-tree-node[data-component-name="ct_inner_content"] > .ct-dom-tree-node-anchor > .ct-dom-tree-node-header .ct-nicename:before {
+	background-color:#FF8B00;
+}
+
+
+/**
+ * Nodes
+ */
+.ct-dom-tree-parent.ct-dom-tree-node-anchor:not(.ct-dom-tree-node-selected),
+.ct-dom-tree-node-header {
+	background-color:transparent;
+	border-bottom:1px dashed rgba(255,255,255,0.2);
+	margin:0;
+	width:100%;
+}
+
+.ct-dom-tree-parent.ct-dom-tree-node-anchor {
+	width:100%;
+}
+
+.ct-dom-tree-parent.ct-dom-tree-node-anchor:not(.ct-dom-tree-node-selected):hover,
+.ct-dom-tree-node-header:hover {
+	background-color:rgba(255,255,255,0.2);
+}
+
+.ct-more-options-expanded .ct-more-options {
+	background-color:#222;
+}
+
+.ct-more-options-expanded .ct-more-options ul li:hover {
+	background-color:#24577E;
+}
+
+.ct-dom-tree-node {
+	min-width:0;
+}
+
+.ct-elements-managers-bottom > .ct-dom-tree-node .ct-dom-tree-node {
+	width:auto;
+}
+
+.ct-dom-tree-node-selected .ct-dom-tree-node-header,
+.ct-dom-tree-parent.ct-dom-tree-node-selected {
+	background-color:#24577E;
+	color:white;
+	margin:0;
+}
+
+.ct-dom-tree-parent.ct-dom-tree-node-selected .ct-icon:before {
+	color:white;
+}
+
+.ct-expand-butt span.ct-icon:before {
+	content:'\25b6';
+	font-size:10px;
+}
+
+.ct-dom-tree-node-expanded > .ct-dom-tree-node-anchor .ct-expand-butt span.ct-icon:before,
+.ct-style-set-expanded > .ct-expand-butt span.ct-icon:before {
+	content:"\25bc";
+	font-size:10px;
+}
+
+
+/**
+ * Layout things
+ */
+.oxygen-add-section-accordion-contents .oxygen-add-section-element {
+	width:calc(33.3% - 6px);
+	font-size:10px;
+}
+
+.oxygen-add-section-accordion-contents h2 {
+	color:rgba(255,255,255,0.5);
+	margin-bottom:4px;
+	font-size:12px;
+	margin-top:7px;
+	padding-bottom:2px;
+	border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+#oxygen-sidebar-control-panel-basic-styles .oxygen-control-label {
+	font-size:12px;
+	color:rgba(255,255,255,0.7);
+	text-align:left;
+}
+
+#oxygen-sidebar-control-panel-basic-styles .oxygen-icon-button-list-option-label {
+	display:none;
+}
+
+#oxygen-sidebar-control-panel-basic-styles .oxygen-basic-styles-flex-alignment-padded {
+	padding-left:0;
+	padding-right:0;
+}
+
+#oxygen-sidebar-control-panel-basic-styles .oxygen-icon-button-list-option {
+	width:1%;
+}
+
+.oxygen-color-picker .oxygen-color-picker-color,
+.alpha-color-picker-wrap .wp-picker-container .button.wp-color-result {
+	margin-left:0;
+	width:25px;
+	height:25px;
+	border-radius:4px;
+}
+
+.oxygen-control-label {
+	font-size:12px;
+}
+
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb,
+#oxygen-global-settings .oxygen-settings-breadcrumb {
+	font-size:12px;
+}
+
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb .oxygen-sidebar-breadcrumb-icon:before,
+#oxygen-global-settings .oxygen-settings-breadcrumb .oxygen-sidebar-breadcrumb-icon:before {
+	display: block;
+	width: 20px;
+	height: 20px;
+	content: '\2039';
+	color: white;
+	font-size: 29px;
+	background-color: #444;
+	padding: 4px 0 0 6px;
+	border-radius: 4px;
+	position:relative;
+	z-index:2;
+	line-height:7px;
+}
+
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb .oxygen-sidebar-breadcrumb-icon,
+#oxygen-global-settings .oxygen-settings-breadcrumb .oxygen-sidebar-breadcrumb-icon {
+	margin-right:0;
+}
+
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb .oxygen-sidebar-breadcrumb-icon img,
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb .oxygen-sidebar-breadcrumb-all-styles,
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb .oxygen-sidebar-breadcrumb-separator,
+#oxygen-global-settings .oxygen-settings-breadcrumb .oxygen-sidebar-breadcrumb-icon img,
+#oxygen-global-settings .oxygen-settings-breadcrumb .oxygen-sidebar-breadcrumb-all-styles,
+#oxygen-global-settings .oxygen-settings-breadcrumb .oxygen-sidebar-breadcrumb-separator {
+	display:none;
+}
+
+#oxygen-sidebar > .oxygen-sidebar-breadcrumb .oxygen-sidebar-breadcrumb-current,
+#oxygen-global-settings .oxygen-settings-breadcrumb .oxygen-sidebar-breadcrumb-current {
+	display:block;
+	text-align:center;
+	text-transform:uppercase;
+	margin-left:-40px;
+}
+
+.oxygen-sidebar-control-panel.oxygen-sidebar-advanced-home .oxygen-sidebar-advanced-subtab,
+.oxygen-effects-tab .oxygen-sidebar-advanced-subtab,
+.oxygen-sidebar-advanced-subtab,
+.oxygen-global-settings .oxygen-sidebar-advanced-subtab {
+	font-size:12px;
+	line-height:12px;
+	padding:8px 12px;
+	border-radius:4px;
+}
+
+.oxygen-measure-box,
+.oxygen-color-picker input,
+.oxygen-color-picker,
+.oxygen-select-box {
+	height:30px;
+	font-size:12px;
+}
+
+.oxygen-select-box-options {
+	top:32px;
+	font-size:12px;
+}
+
+.oxygen-select-box-current {
+	font-size:12px;
+}
+
+.oxygen-control-row {
+	margin-bottom:8px;
+	width:100%;
+}
+
+.oxygen-control-wrapper {
+	margin-right:0;
+}
+
+.oxygen-sidebar-control-panel {
+	padding:10px 14px 10px 10px;
+	background-color:#333;
+}
+
+.oxygen-control-rows-multiple-inset {
+	padding-right:8px;
+}
+
+.oxygen-active-element-icons img {
+	width:15px;
+}
+
+div.oxy-condition-menu-container > div.oxy-condition-menu {
+	z-index:9999;
+	background-color:#333;
+}
+
+div.oxygen-data-dialog {
+	background-color:#333;
+}
+
+.oxygen-sidebar-currently-editing .oxygen-select-box {
+	background-color:#222;
+}
+
+.oxy-global-color-label {
+	background-color:#222;
+}
