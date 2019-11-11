@@ -141,8 +141,7 @@
 .oxygen-sidebar-control-panel.oxygen-sidebar-advanced-home,
 .cm-s-default .CodeMirror-gutters,
 .oxygen-control-row-bottom-bar,
-.oxygen-sidebar-breadcrumb,
-.oxygen-sidebar-control-panel {
+.oxygen-sidebar-breadcrumb {
 	background-color:#222;
 }
 
