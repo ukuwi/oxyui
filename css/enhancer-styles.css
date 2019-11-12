@@ -724,3 +724,54 @@ div.oxygen-data-dialog {
 .oxy-global-color-label {
 	background-color:#222;
 }
+
+.oxygen-control {
+	margin-right:3px;
+}
+
+.oxygen-back-to-frontend {
+	padding:17px 20px;
+}
+
+.oxygen-back-to-frontend i {
+	color:rgba(255,255,255,0.8);
+	font-size:25px;
+}
+
+.oxygen-back-to-frontend:hover i {
+	color:rgba(255,255,255,1);
+}
+
+.oxygen-dom-tree-button span {
+	display:none;
+}
+
+.oxygen-dom-tree-button img {
+	margin-right:0;
+}
+
+.oxygen-toolbar-menus {
+	flex-wrap:nowrap;
+}
+
+.oxygen-toolbar-menus .oxygen-toolbar-button span {
+	display:none;
+}
+
+.oxygen-manage-menu img + img {
+	width:25px;
+	height:25px;
+}
+
+.oxygen-back-to-wp-menu {
+	border-left:1px solid #2c343a;
+}
+
+.oxygen-back-to-wp-menu img {
+	height:25px;
+}
+
+.oxygen-toolbar-button-dropdown {
+	top:58px;
+	width:100px;
+}
