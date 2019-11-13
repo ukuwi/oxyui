@@ -1,6 +1,6 @@
 ( function($) {
 
-	let url = siteURL.link + '/wp-admin';
+	let url = localVars.siteURL + '/wp-admin';
 
 	let oxyuiBackToLinks = '' +
 		'<a class="oxygen-toolbar-button-dropdown-option" ng-href="' + url + '/edit.php?post_type=ct_template" href="' + url + '/edit.php?post_type=ct_template">Templates</a>' +
@@ -15,14 +15,23 @@
 	$('.oxygen-back-to-wp-menu .oxygen-toolbar-button-dropdown-option:last-child').remove();
 
 	// Add a back to front end link
+	let isTemplate = localVars.istemplate;
+
+	let ngHREF = '';
+
+	if ( isTemplate == 1 ) {
+		ngHREF = 'iframeScope.template.postData.frontendURL';
+	} else {
+		ngHREF = 'iframeScope.ajaxVar.frontendURL';
+	}
+
 	let frontEndLink = '' +
-		'<a ng-href="{{iframeScope.template.postData.frontendURL}}" target="_blank" style="text-decoration:none;" title="Open in Front End">' +
+		'<a ng-href="{{' + ngHREF + '}}" target="_blank" style="text-decoration:none;" title="Open in Front End">' +
 			'<div class="oxygen-back-to-frontend oxygen-dom-tree-button oxygen-toolbar-button">' +
 				'<i class="fa fa-desktop"></i>' +
 			'</div>' +
 		'</a>';
 
 	$('#oxygen-topbar .oxygen-dom-tree-button.oxygen-toolbar-button').before(frontEndLink);
-	
 
 })( jQuery );

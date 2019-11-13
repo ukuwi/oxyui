@@ -42,7 +42,9 @@ function load_editor_enhancer_styles_and_scripts() {
 			wp_enqueue_script( 'editor-enhancer-keyboard-shortcuts', plugin_dir_url( __FILE__ ) . 'js/keyboard-shortcuts.js', array(), '1.0.0', true );
 
 			wp_enqueue_script( 'editor-enhancer-scripts', plugin_dir_url(__FILE__) . 'js/main.js', array(), false, true );
-			wp_localize_script( 'editor-enhancer-scripts', 'siteURL', array( 'link' => get_site_url() ) );
+
+			$is_template = ( isset( $_GET['ct_template'] ) && $_GET['ct_template'] ) ? 1 : 0;
+			wp_localize_script( 'editor-enhancer-scripts', 'localVars', array( 'siteURL' => get_site_url(), 'istemplate' => $is_template ) );
 		}
 		add_action( 'oxygen_enqueue_ui_scripts', 'enqueue_editor_enhancer_JS' );
 
