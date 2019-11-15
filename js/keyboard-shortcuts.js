@@ -1,6 +1,6 @@
 ( function($) {
 
-	function oxygenKeyDownSwitcher(event) {
+	function eefoKeyDownActions(event) {
 		switch (String.fromCharCode(event.which).toLowerCase()) {
 
 			// Save the editor
@@ -66,14 +66,14 @@
 	 */
 	$(window).bind('keydown', function(event) {
 		if ( (event.ctrlKey || event.metaKey)/* && event.altKey*/) {
-			oxygenKeyDownSwitcher(event);
+			eefoKeyDownActions(event);
 		}
 	});
 	$(document).ready(function(){
 		$("#ct-artificial-viewport").load(function(){
 			$(this).contents().bind('keydown', function(event) {
 				if ( (event.ctrlKey || event.metaKey)/* && event.altKey */) {
-					oxygenKeyDownSwitcher(event);
+					eefoKeyDownActions(event);
 				}
 			});
 		});

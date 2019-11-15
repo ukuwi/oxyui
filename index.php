@@ -23,30 +23,28 @@ if ( ! defined( 'WPINC' ) ) die;
  * - Oxygen editor is loaded; and
  * - builder is set to "true".
  */
-add_action( 'init', 'load_editor_enhancer_styles_and_scripts' );
+add_action( 'init', 'eefo_EnqueueStylesAndScripts' );
 
-function load_editor_enhancer_styles_and_scripts() {
+function eefo_EnqueueStylesAndScripts() {
 
 	// Being logged in is most important
 	if( ! is_user_logged_in() ) return;
 	
 	// Check builder is available and editable before loading styles and scripts
-	if ( isset($_GET['ct_builder']) && $_GET['ct_builder'] == true ) :
+	if ( isset( $_GET['ct_builder'] ) && $_GET['ct_builder'] == true ) :
 
-		function enqueue_editor_enhancer_CSS() {
-			wp_enqueue_style( 'editor-enhancer', plugin_dir_url(__FILE__) . 'css/enhancer-styles.css' );
+		function eefo_EnqueueCSS() {
+			wp_enqueue_style( 'eefo-styles', plugin_dir_url(__FILE__) . 'css/enhancer-styles.css' );
 		}
-		add_action( 'wp_footer', 'enqueue_editor_enhancer_CSS' );
+		add_action( 'wp_footer', 'eefo_EnqueueCSS' );
 
-		function enqueue_editor_enhancer_JS() {
-			wp_enqueue_script( 'editor-enhancer-keyboard-shortcuts', plugin_dir_url( __FILE__ ) . 'js/keyboard-shortcuts.js', array(), '1.0.0', true );
-
-			wp_enqueue_script( 'editor-enhancer-scripts', plugin_dir_url(__FILE__) . 'js/main.js', array(), false, true );
-
+		function eefo_EnqueueJS() {
+			wp_enqueue_script( 'eefo-keyboard-shortcuts', plugin_dir_url( __FILE__ ) . 'js/keyboard-shortcuts.js', array(), '1.0.0', true );
+			wp_enqueue_script( 'eefo-main-scripts', plugin_dir_url(__FILE__) . 'js/main.js', array(), false, true );
 			$is_template = ( isset( $_GET['ct_template'] ) && $_GET['ct_template'] ) ? 1 : 0;
-			wp_localize_script( 'editor-enhancer-scripts', 'localVars', array( 'siteURL' => get_site_url(), 'istemplate' => $is_template ) );
+			wp_localize_script( 'eefo-main-scripts', 'eefoLocalVars', array( 'siteURL' => get_site_url(), 'istemplate' => $is_template ) );
 		}
-		add_action( 'oxygen_enqueue_ui_scripts', 'enqueue_editor_enhancer_JS' );
+		add_action( 'oxygen_enqueue_ui_scripts', 'eefo_EnqueueJS' );
 
 	endif;
 
