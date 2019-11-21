@@ -1,3 +1,5 @@
+No longer being updated publicly on GitHub. Please visit https://wordpress.org/plugins/editor-enhancer-for-oxygen for the latest stable version.
+
 === Editor Enhancer for Oxygen ===
 Contributors: ukuwi
 Requires at least: 5.2.4
